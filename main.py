@@ -15,9 +15,6 @@ handler = TimedRotatingFileHandler(
     utc=True
 )
 
-# ファイル名に日付を追加するフォーマット（例：bot-log.2025-05-09）
-handler.suffix = "%Y-%m-%d"
-
 # ログ設定
 logging.basicConfig(
     level=logging.INFO,
